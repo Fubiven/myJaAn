@@ -1,10 +1,8 @@
 package com.fzp.mystudyandroid.main;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -17,7 +15,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.fzp.mystudyandroid.R;
 import com.fzp.mystudyandroid.myEvent.MyClickListener;
 import com.fzp.mystudyandroid.utils.FileUtil;
@@ -26,12 +23,8 @@ import com.fzp.mystudyandroid.utils.PreCacheUtil;
 import com.fzp.mystudyandroid.utils.WindowImmersiveUtil;
 import com.fzp.mystudyandroid.utils.db.DBHelper;
 import com.fzp.mystudyandroid.views.aboutDialog.PromptDialog;
-
-import java.io.File;
-
 import static com.fzp.mystudyandroid.utils.PreCacheUtil.*;
 import static java.io.File.*;
-import static java.lang.String.format;
 
 /**
  * 登录界面
@@ -138,8 +131,8 @@ public class LoginActivity extends AppCompatActivity {
         });
         mDBHelper = DBHelper.getInstance(this);
         mHandler = new LoginHandler();
-        mAccount = getUserName();
-        mPSW = getPassword();
+        mAccount = PreCacheUtil.getString(PRE_USERNAME, "");
+        mPSW = PreCacheUtil.getString(PRE_PSW, "");
     }
 
 

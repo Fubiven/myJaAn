@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.fzp.mystudyandroid.R;
 import com.fzp.mystudyandroid.utils.PreCacheUtil;
 import com.fzp.mystudyandroid.utils.WindowImmersiveUtil;
+import static com.fzp.mystudyandroid.utils.PreCacheUtil.*;
 
 public class StartActivity extends AppCompatActivity  {
 
@@ -35,8 +36,8 @@ public class StartActivity extends AppCompatActivity  {
         WindowImmersiveUtil.statusBarHide(this);
         setContentView(R.layout.activity_start);
         StartHandle handler = new StartHandle();
-        if(!PreCacheUtil.getIsFirst()){
-            if (PreCacheUtil.getIsLogin()){ /* 已登录 */
+        if(!PreCacheUtil.getBoolean(PRE_ISFIRST, true)){
+            if (PreCacheUtil.getBoolean(PRE_ISLOGIN, false)){ /* 已登录 */
                 handler.sendEmptyMessage(TO_HOME);
             }else{ /* 未登录 */
                 handler.sendEmptyMessageDelayed(TO_LOGIN, SLEEP_TIME);

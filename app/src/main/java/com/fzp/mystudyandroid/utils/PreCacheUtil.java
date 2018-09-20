@@ -67,37 +67,23 @@ public class PreCacheUtil {
     }
 
     /**
-     * 获取是否首次启动程序
-     * @return  （默认首次）
+     * 获取字符串类型缓存值
+     * @param key                键
+     * @param defaultValue      默认值
+     * @return                   缓存数据
      */
-    public static boolean getIsFirst(){
-        return mPreCacheUtil.getBoolean(PRE_ISFIRST, true);
+    public static String getString(String key, String defaultValue){
+        return mPreCacheUtil.getString(key, defaultValue);
     }
 
     /**
-     * 获取登录状态
-     * @return  （默认未登录）
+     * 获取布尔类型缓存值
+     * @param key                键
+     * @param defaultValue      默认值
+     * @return                   缓存数据
      */
-    public static boolean getIsLogin(){
-        return mPreCacheUtil.getBoolean(PRE_ISLOGIN, false);
-    }
-
-
-    /**
-     * 获取用户名
-     * @return  （默认""）
-     */
-    public static String getUserName(){
-        return mPreCacheUtil.getString(PRE_USERNAME, "");
-    }
-
-
-    /**
-     * 获取密码
-     * @return  （默认""）
-     */
-    public static String getPassword(){
-        return mPreCacheUtil.getString(PRE_PSW, "");
+    public static boolean getBoolean(String key, boolean defaultValue){
+        return mPreCacheUtil.getBoolean(key, defaultValue);
     }
 
 
