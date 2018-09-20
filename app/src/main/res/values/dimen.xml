@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 间距 -->
+    <dimen name="spacing_vertical_little">6dp</dimen>
+    <dimen name="spacing_vertical_small">10dp</dimen>
+    <dimen name="spacing_vertical_medium">14dp</dimen>
+    <dimen name="spacing_vertical_large">20dp</dimen>
+    <dimen name="spacing_vertical_super">28dp</dimen>
+    <dimen name="spacing_horizontal_little">2dp</dimen>
+    <dimen name="spacing_horizontal_small">4dp</dimen>
+    <dimen name="spacing_horizontal_medium">8dp</dimen>
+    <dimen name="spacing_horizontal_large">12dp</dimen>
+    <dimen name="spacing_horizontal_super">16dp</dimen>
+
+    <!-- 字体 -->
+    <dimen name="text_size_min">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_big">18sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_super">28sp</dimen>
+
+</resources>

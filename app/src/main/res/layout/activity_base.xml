@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.fzp.mystudyandroid.main.BaseActivity">
+    <!-- 标题栏 -->
+    <include android:id="@+id/layout_title_bar" layout="@layout/layout_title_bar"/>
+
+    <!-- 界面主体 -->
+    <FrameLayout
+        android:id="@+id/fl_child_container"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+</LinearLayout>

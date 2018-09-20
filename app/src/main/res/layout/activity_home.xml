@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fzp.mystudyandroid.main.HomeActivity">
+    <ScrollView
+        android:id="@+id/layout_main_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_vertical_medium"
+            android:layout_marginRight="@dimen/spacing_horizontal_medium"
+            android:layout_marginLeft="@dimen/spacing_horizontal_medium"
+            android:orientation="vertical">
+            <!-- android 中文官网教程入口 -->
+            <TextView
+                android:id="@+id/tv_toCNStudy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/to_official_website_tutorials"
+                android:textColor="@color/home_list_text_color_selector"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold|italic">
+            </TextView>
+
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/spacing_vertical_medium"
+                android:background="@color/colorLightGray"/>
+            <!-- android 工作测试入口 -->
+            <TextView
+                android:id="@+id/tv_toWorkTest"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/to_work_test"
+                android:textColor="@color/home_list_text_color_selector"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold|italic">
+            </TextView>
+
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/spacing_vertical_medium"
+                android:background="@color/colorLightGray"/>
+
+            <!-- android 学习测试入口 -->
+            <TextView
+                android:id="@+id/tv_toStudyTest"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/to_study_test"
+                android:textColor="@color/home_list_text_color_selector"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold|italic">
+            </TextView>
+
+            <!-- 分割线 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="@dimen/spacing_vertical_medium"
+                android:background="@color/colorLightGray"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

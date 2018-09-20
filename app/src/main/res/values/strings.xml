@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">安卓世界</string>
+    <string name="please_input_name">请输入名称</string>
+    <string name="submit">提交</string>
+    <string name="edit_message">输入消息</string>
+    <string name="button_send">发送</string>
+    <string name="hello_blank_fragment">卡片</string>
+    <string name="changeFragment">切换卡片</string>
+    <string name="to_official_website_tutorials"><u>中文网学习教程</u></string>
+    <string name="to_work_test"><u>工作测试</u></string>
+    <string name="to_study_test"><u>学习测试</u></string>
+    <string name="hint">请注意</string>
+    <string name="login">登录</string>
+    <string name="login_hint_account">账号/手机号/邮箱</string>
+    <string name="login_hint_psw">密码</string>
+    <string name="forget_psw">忘记密码？</string>
+    <string name="user_registration">用户注册</string>
+    <string name="login_bottom_text">登录即代表阅读并同意</string>
+    <string name="terms_of_service">服务条款</string>
+    <string name="result">结果</string>
+    <string name="calculation_formula">1388 – 1388%10 + 10 = ？</string>
+    <string name="image_load">图片加载</string>
+    <string name="version_info">版本信息</string>
+    <string name="permission_recode_audio_hint">录制音频权限未被授权，请授权</string>
+    <string name="permission_get_accounts_hint">账户获取权限未被授权，请授权</string>
+    <string name="permission_read_phone_hint">手机状态权限未被授权，请授权</string>
+    <string name="permission_call_phone_hint">拨号权限未被授权，请授权</string>
+    <string name="permission_camera_hint">相机权限未被授权，请授权</string>
+    <string name="permission_access_fine_location_hint">精确定位权限未被授权，请授权</string>
+    <string name="permission_access_coarse_location_hint">大致定位权限未被授权，请授权</string>
+    <string name="permission_white_external_hint">读写存储权限未被授权，请授权</string>
+
+
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+</resources>

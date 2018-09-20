@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#55cc55</color>
+    <color name="colorPrimaryDark">#117755</color>
+    <color name="colorDarkSmokeGreen">#40a745</color>
+    <color name="colorLightGreen">#AADDCC</color>
+    <color name="colorLightBlue">#93CFE7</color>
+    <color name="colorSkyBlue">#00BBDD</color>
+    <color name="colorBlue">#00AAFF</color>
+    <color name="colorIcon">#ff2299</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorRed">#cc2233</color>
+    <color name="colorLightPink">#FFCCCC</color>
+    <color name="colorOrange">#FF7711</color>
+    <color name="colorYellow">#FFEE33</color>
+    <color name="colorPurple">#6633BB</color>
+    <color name="colorBlack">#333333</color>
+    <color name="colorDarkGray">#666666</color>
+    <color name="colorGray">#999999</color>
+    <color name="colorLightGray">#CCCCCC</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <!-- 透明-->
+    <color name="colorTransparent">#00FFFFFF</color>
+    <!-- 半透明灰-->
+    <color name="colorHalfTransparentPrimaryNor">#bb55cc55</color>
+    <color name="colorHalfTransparentPrimaryPress">#7755cc55</color>
+    <color name="colorHalfTransparentBlueNor">#bb00AAFF</color>
+    <color name="colorHalfTransparentBluePress">#7700AAFF</color>
+    <color name="colorHalfTransparentGray">#55000000</color>
+</resources>

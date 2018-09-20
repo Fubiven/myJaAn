@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Android World</string>
+    <string name="please_input_name">Enter the name</string>
+    <string name="submit">Submit</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="hello_blank_fragment">Hello to fragment</string>
+    <string name="changeFragment">Change fragment</string>
+    <string name="to_official_website_tutorials"><u>Chinese Network Learning Course</u></string>
+    <string name="to_work_test"><u>Work Test</u></string>
+    <string name="to_study_test"><u>Study Test</u></string>
+    <string name="hint">Please note that</string>
+    <string name="login">Login</string>
+    <string name="login_hint_account">account/phoneNum/mail</string>
+    <string name="login_hint_psw">password</string>
+    <string name="forget_psw">Forget the password？</string>
+    <string name="user_registration">User registration</string>
+    <string name="login_bottom_text">Login means read and agreement</string>
+    <string name="terms_of_service">terms of service</string>
+    <string name="result">Result</string>
+    <string name="calculation_formula">1388 – 1388%10 + 10 = ？</string>
+    <string name="image_load">Load Image</string>
+    <string name="version_info">Version Information</string>
+    <string name="permission_recode_audio_hint">Permission PERMISSION_RECORD_AUDIO is not authorized, please authorize</string>
+    <string name="permission_get_accounts_hint">Permission PERMISSION_GET_ACCOUNTS is not authorized, please authorize</string>
+    <string name="permission_read_phone_hint">Permission PERMISSION_READ_PHONE_STATE is not authorized, please authorize</string>
+    <string name="permission_call_phone_hint">Permission PERMISSION_CALL_PHONE is not authorized, please authorize</string>
+    <string name="permission_camera_hint">Permission PERMISSION_CAMERA is not authorized, please authorize</string>
+    <string name="permission_access_fine_location_hint">Permission PPERMISSION_ACCESS_FINE_LOCATION is not authorized, please authorize</string>
+    <string name="permission_access_coarse_location_hint">Permission PERMISSION_ACCESS_COARSE_LOCATION is not authorized, please authorize</string>
+    <string name="permission_white_external_hint">Permission PERMISSION_WRITE_EXTERNAL_STORAGEis not authorized, please authorize</string>
+
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+
+</resources>
