@@ -34,10 +34,6 @@ import static java.io.File.*;
 public class LoginActivity extends AppCompatActivity {
     private static final int TO_HOME = 100002;
     /**
-     * 数据库辅助类实例
-     */
-    public DBHelper mDBHelper = null;
-    /**
      * 账号
      */
     private String mAccount = "";
@@ -129,7 +125,6 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-        mDBHelper = DBHelper.getInstance(this);
         mHandler = new LoginHandler();
         mAccount = PreCacheUtil.getString(PRE_USERNAME, "");
         mPSW = PreCacheUtil.getString(PRE_PSW, "");
@@ -138,7 +133,6 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        mDBHelper.closeDB();
         finish();
     }
 

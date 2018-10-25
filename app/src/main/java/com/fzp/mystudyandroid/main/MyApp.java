@@ -2,13 +2,7 @@ package com.fzp.mystudyandroid.main;
 
 import android.app.Application;
 import android.content.Context;
-import android.widget.Toast;
-
-import com.fzp.mystudyandroid.utils.FileUtil;
-import com.fzp.mystudyandroid.utils.PermissionUtils;
 import com.fzp.mystudyandroid.utils.PreCacheUtil;
-import com.fzp.mystudyandroid.utils.db.DBHelper;
-import com.fzp.mystudyandroid.views.aboutDialog.PromptDialog;
 
 /**
  * 应用程序界面
@@ -43,7 +37,6 @@ public class MyApp extends Application {
      */
     private void initData() {
         mContext = getApplicationContext();
-        DBHelper.initDBHelper(mContext);
     }
 
 }

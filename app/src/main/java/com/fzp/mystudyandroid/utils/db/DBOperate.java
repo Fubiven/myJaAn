@@ -22,9 +22,14 @@ public class DBOperate {
      * 数据库实例
      */
     private static SQLiteDatabase db = null;
+    /**
+     * 数据库辅助工具
+     */
+    private DBHelper mHelper = null;
 
     private DBOperate(Context context){
-        db = DBHelper.getInstance(context).getDB();
+        mHelper = DBHelper.getInstance(context);
+        db = mHelper.getDB();
         db.setLocale(Locale.CHINA);
     }
 
@@ -38,6 +43,28 @@ public class DBOperate {
             mInstance = new DBOperate(context);
         }
         return  mInstance;
+    }
+
+    /**
+     * 回收相关实例
+     */
+    public void close(){
+        mHelper.closeDB();
+        if (!isClose()){
+            db.close();
+            db = null;
+        }
+        if (mInstance != null){
+            mInstance = null;
+        }
+    }
+
+    /**
+     * 检查数据库是否关闭
+     * @return  关闭情况
+     */
+    private boolean isClose() {
+        return (db == null) || !db.isOpen();
     }
 
     /**

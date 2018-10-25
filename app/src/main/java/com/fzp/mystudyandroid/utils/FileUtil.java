@@ -4,14 +4,10 @@ import android.content.res.AssetManager;
 import android.os.Environment;
 import android.os.StatFs;
 import android.text.TextUtils;
-
-import com.fzp.mystudyandroid.main.MyApp;
-
 import org.apache.http.util.EncodingUtils;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;

@@ -2,6 +2,8 @@ package com.fzp.mystudyandroid.utils.db;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
 import com.fzp.mystudyandroid.utils.FileUtil;
 
 /**
@@ -12,6 +14,7 @@ import com.fzp.mystudyandroid.utils.FileUtil;
  */
 
 public class DBHelper {
+    public final static String TAG = DBHelper.class.getSimpleName();
     /**
      * 数据库所在内部文件夹名称
      */
@@ -31,15 +34,11 @@ public class DBHelper {
     /**
      * 数据库创建和版本管理助手
      */
-    private DatabaseHelper mDatabaseHelper = null;
+    private DatabaseHelper mDatabaseHelper;
     /**
      * 数据库实例
      */
     private static SQLiteDatabase db = null;
-
-    public static void initDBHelper(Context context){
-        mInstance = new DBHelper(context);
-    }
 
     /**
      * 获取数据库辅助类实例
@@ -101,6 +100,19 @@ public class DBHelper {
         db = mDatabaseHelper.getWritableDatabase();
     }
 
+    /**
+     * 本方法实现数据库表及其它结构的建立.<br>
+     * <b>数据库需要的表则其建表语句应该放在本方法里，有多少表就要多少个建表语句.</b>
+     * @param db    数据库
+     */
+    private static void createAllTable(SQLiteDatabase db){
+        db.execSQL(FootballerDB.CREATE_FOOTBALLER_TABLE);
+    }
+
+    private static void dropAllTable(SQLiteDatabase db, int oldVersion, int newVersion){
+        Log.d(TAG, "开始删除之前的数据库表结构.");
+        db.execSQL("DROP TABLE IF EXISTS " + FootballerDB.TABLE_FOOTBALLER);
+    }
 
     /**
      * 数据库创建和版本管理帮助类
@@ -121,7 +133,7 @@ public class DBHelper {
          */
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL(FootballerDB.CREATE_FOOTBALLER_TABLE);
+            createAllTable(db);
         }
 
         /**
@@ -132,7 +144,8 @@ public class DBHelper {
          */
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+            dropAllTable(db, oldVersion, newVersion);
+            onCreate(db);
         }
     }
 
